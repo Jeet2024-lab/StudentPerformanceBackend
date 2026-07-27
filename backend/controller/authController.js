@@ -25,7 +25,7 @@ export const createUser = async (req, res) => {
       designation,
       department
     } = req.body;
-
+console.log(req.body);
     const existingUser = await User.findOne({ email });
 
     if (existingUser) {
@@ -49,7 +49,6 @@ export const createUser = async (req, res) => {
       designation,
       department,
     };
-
     if (role === "student") {
       userData.enrollment = enrollment;
       userData.semester = semester;
