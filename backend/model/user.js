@@ -61,7 +61,7 @@ const userSchema = new mongoose.Schema(
   },
   default: undefined
 },
-    },
+
     // Admin
     adminId:String
 
