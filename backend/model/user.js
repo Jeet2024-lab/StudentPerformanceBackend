@@ -53,9 +53,14 @@ const userSchema = new mongoose.Schema(
 
     designation:String,
 
-    department:{type:String,
-         enum: ["CSE", "IT", "AIML", "DS"],
- 
+    department: {
+  type: String,
+  enum: ["CSE", "IT", "AIML", "DS"],
+  required: function () {
+    return this.role === "faculty";
+  },
+  default: undefined
+},
     },
     // Admin
     adminId:String
