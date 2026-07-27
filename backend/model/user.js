@@ -36,7 +36,7 @@ const userSchema = new mongoose.Schema(
         
   type: String,
   enum: ["CSE", "IT", "AIML", "DS"],
-  required: true ,
+
   },
 
     // Student
@@ -54,9 +54,14 @@ const userSchema = new mongoose.Schema(
     // Faculty
     employeeId:String,
 
-    designation:String,
+    designation:{
+        
+  type: String,
+  enum: ["Professor", "Associate Professor", "Assistant Professor", "Lecturer","Teaching Assistant"],
+  
+  },
 
-    designation:String,
+   
 
     department: {
   type: String,
