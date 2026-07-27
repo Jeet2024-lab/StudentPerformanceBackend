@@ -6,7 +6,7 @@ import authRoutes from "./routes/authRoutes.js";
 import facultyRoutes from './routes/facultyRoutes.js';
 
 dotenv.config();
-const port=process.env.PORT || 3011;
+const port=process.env.PORT || 10011;
 const app=express();
 app.use(cors());
 app.use(express.json());
