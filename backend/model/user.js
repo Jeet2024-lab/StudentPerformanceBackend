@@ -32,7 +32,12 @@ const userSchema = new mongoose.Schema(
 
     image:String,
 
-    branch:String,
+    branch:{
+        
+  type: String,
+  enum: ["CSE", "IT", "AIML", "DS"],
+  required: true ,
+  },
 
     // Student
     enrollment:String,
