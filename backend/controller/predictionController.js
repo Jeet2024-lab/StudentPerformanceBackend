@@ -51,7 +51,7 @@ console.log(marks.length);
 const cgpa = averageMarks / 10;
 
     const response = await axios.post(
-        "http://127.0.0.1:5000/predict",
+        "https://mlmodelai-1.onrender.com/predict",
         {
             attendance,
             assignment: marks[0].assignment,
