@@ -54,6 +54,7 @@ export const createUser = async (req, res) => {
       userData.enrollment = enrollment;
       userData.semester = semester;
       userData.section = section;
+      userData.department = department;
     }
 
     if (role === "faculty") {
