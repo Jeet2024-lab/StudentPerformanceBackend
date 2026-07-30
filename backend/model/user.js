@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema(
 
     password:{
         type:String,
-        required:true,
+        required:true
     },
 
     mobile:String,
@@ -32,12 +32,7 @@ const userSchema = new mongoose.Schema(
 
     image:String,
 
-    branch:{
-        
-  type: String,
-//   enum: ["CSE", "IT", "AIML", "DS"],
-
-  },
+    branch:String,
 
     // Student
     enrollment:String,
@@ -54,21 +49,13 @@ const userSchema = new mongoose.Schema(
     // Faculty
     employeeId:String,
 
-    designation:{
-        
-  type: String,
-//   enum: ["Professor", "Associate Professor", "Assistant Professor", "Lecturer","Teaching Assistant"],
-  
-  },
+    designation:String,
 
-   
+    designation:String,
 
-    department: {
-  type: String,
-//   enum: ["CSE", "IT", "AIML", "DS"],
-  
-  
-},
+    department:{type:String,
+        // enum:["CSE","IT","AIML","DS"],
+        },
 
     // Admin
     adminId:String
