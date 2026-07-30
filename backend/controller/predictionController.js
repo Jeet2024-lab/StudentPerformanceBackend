@@ -104,7 +104,7 @@ export const predictStudent = async (req, res) => {
         headers: {
           "Content-Type": "application/json",
         },
-        timeout: 30000,
+        timeout: 600000,
       }
     );
 
